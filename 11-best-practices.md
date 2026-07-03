@@ -11,13 +11,13 @@ Consolidated AI-DLC operating practices. For step-by-step procedures, follow the
 
 ## Context discipline
 
-- Load **Tier-1 hot files every session** — `AGENTS.md`, `PROJECT-INDEX.md`, `project-overview.md`, `AI-ASSISTANT-RULES.md`
+- Load the **[Tier-1 hot files](glossary.md#tier-1-hot-files) every session** — `AGENTS.md`, `PROJECT-INDEX.md`, `project-overview.md`, `AI-ASSISTANT-RULES.md` (what "loading" means: [AI Assistant Basics](00-ai-assistant-basics.md))
 - Load **only task-relevant docs** — one module + relevant API/ADR; not entire `docs/` tree
 - Treat `PROJECT-INDEX.md` as **curated current truth**; use git log for history
 - **Verify AI understanding** before coding — stop and fix hot files if wrong
 - Do not load empty placeholder folders
 
-→ [11.03 — Run AI session](guides/11.03-run-ai-session.md) | [06-daily-workflows.md](06-daily-workflows.md)
+→ [11.03 — Run an AI session](guides/11.03-run-ai-session.md) | [06-daily-workflows.md](06-daily-workflows.md)
 
 ---
 

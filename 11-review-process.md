@@ -22,12 +22,12 @@ Impact analysis → Plan approval → Implementation review → AI self-review �
 
 | Review | When | Owner | What to check |
 |--------|------|-------|---------------|
-| **Impact review** | Before schema/API/interface changes | Developer + architect if needed | Blast radius complete; migration/rollback; clients listed ([11-impact-analysis](11-impact-analysis-before-change.md)) |
+| **Impact review** | Before schema/API/interface changes | Developer + architect if needed | [Blast radius](glossary.md#blast-radius) complete; migration/rollback; clients listed ([11-impact-analysis](11-impact-analysis-before-change.md)) |
 | **Plan review** | Before any file edits | Prompt author (you) | Goal, steps, file table, risks (`AGENTS.md`) |
-| **Implementation review** | During AI session | Developer | Each increment matches ticket; patterns per ADR-002; tests alongside code |
+| **Implementation review** | During AI session | Developer | Each increment matches ticket; patterns per ADR-002 (the [conventionally second ADR](glossary.md#adr-001-and-adr-002-convention), recording the core architecture pattern); tests alongside code |
 | **AI self-review** | Before opening PR | Developer + AI | Checklist below |
 | **Human PR review** | Before merge | Sr dev / peer | Logic, security, tests, scope, no silent extras |
-| **Doc review** | Docs or API PR | Doc DRI | [11.13](guides/11.13-pr-docs-and-apis.md) light pass |
+| **Doc review** | Docs or API PR | Doc [DRI](glossary.md#directly-responsible-individual-dri) | [11.13 — PR docs and APIs](guides/11.13-pr-docs-and-apis.md) light pass |
 | **Deep architecture review** | Quarterly / pre-release | Architect DRI | `architecture-review-checklist.md` in context repo |
 
 ---
@@ -102,7 +102,7 @@ Do not open PR until blockers are resolved.
 | Impact | Coordinated change — not partial junior-style fix |
 | Security | No secrets; auth respected; input validated |
 | Tests | Meaningful tests; not trivial asserts |
-| Architecture | ADR-002 compliance; new ADR if decision changed |
+| Architecture | Code follows the architecture pattern recorded in ADR-002; new ADR if a decision changed |
 | Docs | Paired docs PR if contracts changed |
 | Scope | Diff matches approved plan — no drive-by refactors |
 
@@ -154,4 +154,4 @@ See [07-quality-and-maintenance.md](07-quality-and-maintenance.md).
 
 ---
 
-[← Impact analysis](11-impact-analysis-before-change.md) | [Dos and don'ts →](11-dos-and-donts.md) | [Playbook home](README.md)
+[← Dos and don'ts](11-dos-and-donts.md) | [Impact analysis →](11-impact-analysis-before-change.md) | [Playbook home](README.md)

@@ -1,5 +1,7 @@
 # TEST-CONTEXT-{MODULE}
 
+> **How to use this template:** Copy this file to `docs/06-development/TEST-CONTEXT-{MODULE}.md` in your [context repo](../glossary.md#context-repo) — one copy per module. The **developer or QA engineer** fills it in during Phase 6, each sprint, following [11.15 — Playwright testing](../guides/11.15-playwright-testing.md) (Step 1 there generates most of it with AI help). Replace every `{placeholder}`, then **delete this block in your copy**.
+
 | Field | Value |
 |-------|-------|
 | Phase | 6 — Development |

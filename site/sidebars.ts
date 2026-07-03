@@ -3,6 +3,16 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 const sidebars: SidebarsConfig = {
   playbook: [
     {type: 'doc', id: 'README', label: 'Home'},
+    {
+      type: 'category',
+      label: 'Learn the Basics (New Here?)',
+      items: [
+        {type: 'doc', id: 'what-is-ai-dlc', label: 'What is AI-DLC?'},
+        {type: 'doc', id: 'ai-assistant-basics', label: 'AI Assistant Basics'},
+        {type: 'doc', id: 'repo-basics', label: 'Repos & Git Basics'},
+        {type: 'doc', id: 'hands-on-walkthrough', label: 'Hands-On Walkthrough'},
+      ],
+    },
     {type: 'doc', id: 'start-here', label: 'Start Here'},
     {type: 'doc', id: 'core-concepts', label: 'Core Concepts'},
     {type: 'doc', id: 'ai-dlc-spine', label: 'The AI-DLC Spine'},
@@ -58,6 +68,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Templates',
+      link: {type: 'doc', id: 'templates/README'},
       items: [
         {type: 'doc', id: 'templates/PROJECT-INDEX-template', label: 'Project Index'},
         {type: 'doc', id: 'templates/project-overview-template', label: 'Project Overview'},

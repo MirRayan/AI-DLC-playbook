@@ -4,17 +4,17 @@ id: daily-workflows
 
 # Daily and Weekly Workflows
 
-How to run AI sessions, recover context, and maintain rhythm across the team.
+How to run [AI sessions](glossary.md#ai-session), recover context, and maintain rhythm across the team. If you have never worked with an AI assistant, read [AI Assistant Basics](00-ai-assistant-basics.md) first — it explains what sessions, loading, and context windows are.
 
-**Step-by-step session guide:** [11.03 — Run AI session](guides/11.03-run-ai-session.md)
+**Step-by-step session guide:** [11.03 — Run an AI session](guides/11.03-run-ai-session.md)
 
 ---
 
 ## Every AI session (no exceptions)
 
 1. **New chat?** If new task/feature → start fresh ([11.03 — Clear session](guides/11.03-run-ai-session.md#clear-session-before-a-new-task-or-feature))
-2. Load Tier-1 hot files (`AGENTS.md`, `PROJECT-INDEX.md`, `project-overview.md`, `AI-ASSISTANT-RULES.md`)
-3. Verify AI understanding — stop if wrong
+2. Load the four [Tier-1 hot files](glossary.md#tier-1-hot-files) (`AGENTS.md`, `PROJECT-INDEX.md`, `project-overview.md`, `AI-ASSISTANT-RULES.md`) — "load" means let an agentic tool read them by path, or paste their contents into a plain chat ([AI Assistant Basics](00-ai-assistant-basics.md))
+3. Verify AI understanding — ask "Summarize this project and its current phase from the loaded files"; stop and reload if the answer is wrong
 4. Load task context (module, API, ADR) — **this task only**
 5. State intent and constraints
 6. Impact analysis if schema/API change ([11-impact-analysis](11-impact-analysis-before-change.md))
@@ -54,6 +54,8 @@ Full steps: [11.03 — Clear session](guides/11.03-run-ai-session.md#clear-sessi
 
 ## Context recovery tiers
 
+Naming note: **[Tier-1 hot files](glossary.md#tier-1-hot-files)** is the name of the four always-loaded files from step 2 above — it is not one of the recovery tiers below. The recovery tiers are cumulative loading levels for restoring a session: Emergency grabs the two most critical hot files, Standard completes all four, and Task/Full add progressively more.
+
 | Tier | Time | When to use | Load |
 |------|------|-------------|------|
 | **Emergency** | ~60 sec | Quick fix; AI seems lost | `PROJECT-INDEX.md` + `.ai/AI-ASSISTANT-RULES.md` |
@@ -74,7 +76,7 @@ Do **not** load empty placeholder folders (e.g. unused `.ai/prompts/`).
 | Review | Architect / lead | ADRs, changed files, PR checklist |
 | Research / spike | Architect | Project context, external docs |
 | Doc sync | Any | PR-CHECKLIST, changed docs |
-| Testing | Developer / QA | TEST-CONTEXT-{MODULE}.md, module breakdown, QA tickets — see [11.15](guides/11.15-playwright-testing.md) |
+| Testing | Developer / QA | TEST-CONTEXT-{MODULE}.md, module breakdown, QA tickets — see [11.15 — Playwright testing](guides/11.15-playwright-testing.md) |
 
 See `.ai/SESSION-PROTOCOL.md` in your context repo for full protocol.
 
@@ -137,7 +139,9 @@ Impact analysis (if L4) → Plan approval → Implement →
 AI self-review → Human PR review → Doc sync (if needed)
 ```
 
-→ [11-prerequisites.md](11-prerequisites.md) | [11-review-process.md](11-review-process.md)
+L3 and L4 are [prerequisite checklist levels](glossary.md#prerequisite-levels-l1-to-l4): L3 = the task is ready to start, L4 = extra safety checks for schema/API changes.
+
+→ [11-prerequisites.md — readiness checklists](11-prerequisites.md) | [11-review-process.md — review gates](11-review-process.md)
 
 ---
 

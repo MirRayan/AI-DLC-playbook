@@ -1,5 +1,7 @@
 # Specification — {Project Name}
 
+> **How to use this template:** Copy this file to `docs/02-specification/SPECIFICATION.md` in your [context repo](../glossary.md#context-repo). The **project manager (PM)** fills it in during [Phase 2 — Specification](../guides/11.06-phase-2-specification.md), with architect review. Replace every `{placeholder}`, then **delete this block in your copy**.
+
 **Phase:** 2 — Specification
 **Last Updated:** YYYY-MM-DD
 **Author:** {PM name}
@@ -9,7 +11,7 @@
 
 ## ID Scheme
 
-Requirements use IDs: **`FR-{MODULE}-{NNN}`** (e.g. `FR-AUTH-001`, `FR-HOME-003`)
+Requirements use [FR IDs](../glossary.md#fr-ids): **`FR-{MODULE}-{NNN}`** (e.g. `FR-AUTH-001`, `FR-HOME-003`)
 
 - IDs are **stable** — never rename once referenced in breakdown
 - Module prefix matches breakdown module numbering
@@ -93,5 +95,5 @@ Requirements use IDs: **`FR-{MODULE}-{NNN}`** (e.g. `FR-AUTH-001`, `FR-HOME-003`
 
 ## Next Steps
 
-→ Phase 3: [BUSINESS-TECH-CONTEXT.md](../03-context/BUSINESS-TECH-CONTEXT.md)  
-→ Phase 5: Module breakdown in `docs/05-breakdown/modules/`
+→ Phase 3 — business + tech context: guide [11.07 — Phase 3](../guides/11.07-phase-3-business-tech-context.md) (output: `docs/03-context/BUSINESS-TECH-CONTEXT.md` in your context repo, from the [BUSINESS-TECH-CONTEXT template](BUSINESS-TECH-CONTEXT-template.md))  
+→ Phase 5 — breakdown: guide [11.09 — Phase 5](../guides/11.09-phase-5-breakdown.md) (output: `docs/05-breakdown/modules/` in your context repo)

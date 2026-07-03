@@ -4,23 +4,25 @@ id: role-developer
 
 # Developer Onboarding Path
 
-For software developers joining or starting an AI-DLC project.
+For software developers joining or starting an AI-DLC project. New to AI-DLC? Do the [Learn track](00-what-is-ai-dlc.md) first — especially [AI Assistant Basics](00-ai-assistant-basics.md) if you have not worked with an AI assistant before.
 
 ---
 
 ## Week 1 goals
 
-- [ ] Context repo + code repo(s) cloned
-- [ ] Context-load test passes ([11.03](guides/11.03-run-ai-session.md))
-- [ ] Assigned module breakdown read
-- [ ] First ticket in progress or merged
-- [ ] Know where API registry and PR checklist live
+- [ ] [Context repo](glossary.md#context-repo) + [code repo(s)](glossary.md#code-repo) [cloned](glossary.md#clone) (how: [repo primer](00-repo-basics.md))
+- [ ] Context-load test passes ([11.03 — Run an AI session](guides/11.03-run-ai-session.md))
+- [ ] Assigned [module breakdown](glossary.md#breakdown) read
+- [ ] First [ticket](glossary.md#ticket) in progress or merged
+- [ ] Know where the [API registry](glossary.md#backend-index) (`BACKEND-INDEX.md`) and the PR checklist (`docs/process/PR-CHECKLIST.md`) live — both in your context repo, created from the template
 
 **Schedule:** [11.14 — Week 1 schedules](guides/11.14-week-1-schedules.md)
 
 ---
 
 ## Documents you read
+
+All of these live in the context repo, created from the template when the project was bootstrapped ([11.01 — Create a context repo](guides/11.01-create-context-repo.md)):
 
 | Priority | Document | Why |
 |----------|----------|-----|
@@ -39,7 +41,7 @@ For software developers joining or starting an AI-DLC project.
 | When | Document |
 |------|----------|
 | Ticket complete | Module breakdown (ticket status) |
-| API integration verified | [11.12](guides/11.12-document-api-endpoint.md) — registry + reference |
+| API integration verified | [11.12 — Document an API endpoint](guides/11.12-document-api-endpoint.md) — registry + reference |
 | Architecture impact | Flag architect — new ADR may be needed |
 | Milestone shipped | `PROJECT-INDEX.md` Current Work Status (with DRI) |
 
@@ -51,15 +53,15 @@ You typically do **not** own: specification (`FR-*`), concept note, or ADRs.
 
 1. **Prerequisites** — [11-prerequisites.md](11-prerequisites.md) L3 checklist
 2. **New chat** — if new ticket; [11.03 — Clear session](guides/11.03-run-ai-session.md#clear-session-before-a-new-task-or-feature)
-3. **Start session** — Tier-1 load → task context → state intent
+3. **Start session** — load the [Tier-1 hot files](glossary.md#tier-1-hot-files) → task context → state intent (loading mechanics: [AI Assistant Basics](00-ai-assistant-basics.md))
 4. **Impact analysis** — if schema/API change; [11-impact-analysis-before-change.md](11-impact-analysis-before-change.md)
-5. **Pick ticket** — from module breakdown (e.g. `HOME-003`)
+5. **Pick ticket** — from module breakdown; [ticket IDs](glossary.md#ticket-ids) look like `HOME-003` (module prefix + number)
 6. **Check APIs** — `BACKEND-INDEX.md` status before integrating
 7. **Implement** — in **code repo**, not context repo
 8. **Review** — [11-review-process.md](11-review-process.md) before PR
-9. **PR** — code PR; if docs/APIs changed, [11.13](guides/11.13-pr-docs-and-apis.md)
+9. **PR** — code [pull request](glossary.md#pull-request-pr); if docs/APIs changed, [11.13 — PR docs and APIs](guides/11.13-pr-docs-and-apis.md)
 
-Ongoing: [11.10 — Phase 6](guides/11.10-phase-6-development.md)
+Ongoing: [11.10 — Phase 6: development](guides/11.10-phase-6-development.md)
 
 ---
 
@@ -87,9 +89,9 @@ If contract changed → update registry + reference in same PR
 
 | Type | Load extra | Guide |
 |------|------------|-------|
-| Feature | Module doc + API ref | [11.03](guides/11.03-run-ai-session.md) |
-| Bug fix | Module doc + error context | [11.03](guides/11.03-run-ai-session.md) |
-| Doc/API sync | PR-CHECKLIST | [11.13](guides/11.13-pr-docs-and-apis.md) |
+| Feature | Module doc + API ref | [11.03 — Run an AI session](guides/11.03-run-ai-session.md) |
+| Bug fix | Module doc + error context | [11.03 — Run an AI session](guides/11.03-run-ai-session.md) |
+| Doc/API sync | `docs/process/PR-CHECKLIST.md` | [11.13 — PR docs and APIs](guides/11.13-pr-docs-and-apis.md) |
 
 ---
 

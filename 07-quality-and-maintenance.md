@@ -4,13 +4,13 @@ id: quality-and-maintenance
 
 # Quality Gates and Maintenance
 
-Keep the context repo accurate as the project evolves.
+Keep the [context repo](glossary.md#context-repo) accurate as the project evolves. File paths on this page like `docs/process/PR-CHECKLIST.md` live in your context repo, created from the template — not in this playbook.
 
 ---
 
 ## Success criteria — project is "onboarded"
 
-- [ ] Context-load test passes ([11.03](guides/11.03-run-ai-session.md))
+- [ ] Context-load test passes ([11.03 — Run an AI session](guides/11.03-run-ai-session.md))
 - [ ] `PROJECT-INDEX.md` has no placeholder text; reflects real status
 - [ ] ADR-001 (platform/stack) exists and is Accepted
 - [ ] Phase 2 spec has stable requirement IDs
@@ -29,6 +29,8 @@ Keep the context repo accurate as the project evolves.
 | Mechanical checks | `scripts/check-doc-links.sh`, `verify-project-docs.sh` | Before large merges |
 | Architecture integrity | ADR index + quarterly checklist | Quarterly / pre-release |
 | API contract integrity | Rule A/B in `docs/process/AGENT-RULES-BACKEND-API.md` | On API change |
+
+Rule A and Rule B are the two standing API rules the template ships: **Rule A** — before implementing or changing any API client code, check the API registry first; **Rule B** — when a change adds, removes, or renames an endpoint, update the registry and contract docs in the same PR.
 
 **PR procedure:** [11.13 — PR docs and APIs](guides/11.13-pr-docs-and-apis.md)
 
@@ -52,9 +54,9 @@ Assign DRI. Use `.ai/workflows/architecture-review-checklist.md`:
 - `project-overview.md` matches production reality
 - API registry complete for release scope
 - Pending decisions resolved or explicitly deferred
-- Run full verify script + link check
+- Run the full [verify script](glossary.md#verify-script) + link check
 
-Use `git log` since last deep pass to catch drift.
+Use `git log` (Git's built-in change history — see the [repo primer](00-repo-basics.md)) since the last deep pass to catch [drift](glossary.md#drift). Not comfortable with a terminal? Ask a developer to run these, or ask an [agentic AI tool](glossary.md#agentic-tool) to run them for you.
 
 ---
 
@@ -80,13 +82,13 @@ When any endpoint changes:
 
 All three in the **same PR** when possible.
 
-Guide: [11.12](guides/11.12-document-api-endpoint.md)
+Guide: [11.12 — Document an API endpoint](guides/11.12-document-api-endpoint.md)
 
 ---
 
 ## Extending verify scripts
 
-Template ships `scripts/verify-project-docs.sh`. Extend **Phase 3** for your project:
+Template ships `scripts/verify-project-docs.sh`. Extend **section 3 of the script** (its project-specific checks section — not lifecycle Phase 3) for your project:
 
 - Expected API reference files exist
 - ADR index matches files on disk

@@ -7,7 +7,7 @@ title: Impact Analysis Before Change
 
 **Senior developer mindset for AI-assisted work**
 
-When a prompt sounds small — "rename this DB column," "add a field to the API," "change this config" — a junior developer (or an unchecked AI agent) may make the literal change and say "done." A senior developer stops first, maps blast radius, plans ordered steps, then executes.
+When a prompt sounds small — "rename this DB column," "add a field to the API," "change this config" — a junior developer (or an unchecked AI agent) may make the literal change and say "done." A senior developer stops first, maps the [blast radius](glossary.md#blast-radius) (everything the change could break), plans ordered steps, then executes.
 
 This page defines when impact analysis is required, what to analyze, and the mandatory sequence before any file edits.
 
@@ -84,7 +84,7 @@ Micro-fixes that genuinely touch one file with no downstream consumers (typo in 
 | 3 | Run impact analysis (prompt below) |
 | 4 | Present plan + affected files table (per `AGENTS.md` in context repo) |
 | 5 | Human approves plan |
-| 6 | Execute in dependency order (e.g. migration → API → clients → tests → docs) |
+| 6 | Execute in dependency order (migration → backend → API → clients → tests → docs) |
 | 7 | Verify + run review checklist ([11-review-process.md](11-review-process.md)) |
 
 **Recommended execution order for schema/API changes:**
@@ -134,4 +134,4 @@ Paste the snippet from [templates/AI-RULES-impact-analysis-snippet.md](templates
 
 ---
 
-[← Best practices](11-best-practices.md) | [Playbook home](README.md)
+[← Review process](11-review-process.md) | [Playbook home](README.md)

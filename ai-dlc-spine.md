@@ -15,11 +15,11 @@ AI-DLC is a **company standard**, not a single rigid process. Teams may run thei
 
 | # | Commitment | Why it exists | Minimum bar |
 |---|-----------|---------------|-------------|
-| 1 | **A centralized context repo** | One versioned source of truth that outlives refactors and serves humans + AI across sessions and repos | A Git repo, separate from code, holding docs/specs/decisions and AI hot files |
-| 2 | **Stable requirement IDs** | Traceability from requirement → ticket → test; AI and humans refer to the same anchors | Every requirement has an ID that is never reused or renamed once published (e.g. `FR-*`) |
-| 3 | **Context-loaded AI sessions** | Prevents AI from guessing architecture and producing drift | Every AI session loads the project's hot files first; the human verifies AI understanding before code |
-| 4 | **Impact analysis before risky changes** | Stops "literal" changes that break unlisted consumers | Schema / API / shared-interface changes get a blast-radius analysis + approved plan before any edit |
-| 5 | **Docs sync with code** | Keeps the source of truth honest | Contract or decision changes update the relevant docs in the **same PR**; the index reflects current state |
+| 1 | **A centralized [context repo](glossary.md#context-repo)** | One versioned source of truth that outlives refactors and serves humans + AI across sessions and repos | A Git repo, separate from code, holding docs/specs/decisions and AI [hot files](glossary.md#hot-file) |
+| 2 | **Stable requirement IDs** | Traceability from requirement → ticket → test; AI and humans refer to the same anchors | Every requirement has an ID that is never reused or renamed once published (e.g. [`FR-*`](glossary.md#fr-ids)) |
+| 3 | **Context-loaded [AI sessions](glossary.md#ai-session)** | Prevents AI from guessing architecture and producing [drift](glossary.md#drift) — output that no longer matches the agreed plan | Every AI session loads the project's hot files first; the human verifies AI understanding before code |
+| 4 | **[Impact analysis](glossary.md#impact-analysis) before risky changes** | Stops "literal" changes that break unlisted consumers | Schema / API / shared-interface changes get a [blast-radius](glossary.md#blast-radius) analysis + approved plan before any edit |
+| 5 | **Docs sync with code** | Keeps the source of truth honest | Contract or decision changes update the relevant docs in the **same [pull request (PR)](glossary.md#pull-request-pr)**; the index reflects current state |
 
 If a team does these five, they are doing AI-DLC — regardless of how they organize the rest.
 
@@ -44,7 +44,7 @@ When in doubt, start from the reference implementation and trim what you don't n
 
 ## Adapt to your team size
 
-Roles in this playbook (PM, architect, dev lead, developer, Doc DRI) are **hats, not headcount.** One person can wear several.
+Roles in this playbook (PM, architect, dev lead, developer, and the Doc [DRI — directly responsible individual](glossary.md#directly-responsible-individual-dri)) are **hats, not headcount.** One person can wear several.
 
 | Team | Suggested mapping |
 |------|-------------------|
@@ -61,7 +61,7 @@ The spine does not change with team size. The ceremony around it does.
 Run this checklist per project. Each box maps to a spine commitment.
 
 - [ ] **(1)** A context repo exists, separate from code, and is the source of truth
-- [ ] **(1)** Tier-1 hot files are populated and loaded every session
+- [ ] **(1)** [Tier-1 hot files](glossary.md#tier-1-hot-files) are populated and loaded every session
 - [ ] **(2)** Requirements have stable IDs, traceable to tickets and tests
 - [ ] **(3)** Sessions start by loading context; AI understanding is verified before coding
 - [ ] **(4)** Schema/API/interface changes trigger impact analysis + an approved plan
@@ -91,7 +91,7 @@ Run this checklist per project. Each box maps to a spine commitment.
 
 - [02-core-concepts.md](02-core-concepts.md) — vocabulary behind the spine
 - [Glossary](glossary.md) — term definitions
-- [11-prerequisites.md](11-prerequisites.md) — readiness gates (L1–L4)
+- [11-prerequisites.md](11-prerequisites.md) — readiness gates ([levels L1–L4](glossary.md#prerequisite-levels-l1-to-l4))
 - [05-six-phase-lifecycle.md](05-six-phase-lifecycle.md) — the adaptable reference lifecycle
 
 ---

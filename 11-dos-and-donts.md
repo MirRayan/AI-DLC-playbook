@@ -13,14 +13,14 @@ Quick reference card for AI-DLC daily work. For explanations, see linked pages.
 
 | DO | DON'T |
 |----|-------|
-| Load Tier-1 hot files **every** session | Skip context load because "the AI remembers yesterday" |
+| Load [Tier-1 hot files](glossary.md#tier-1-hot-files) **every** session | Skip context load because "the AI remembers yesterday" |
 | **Start a new chat** when switching task or feature | Carry prior task context into unrelated work |
 | Load only docs for **this** ticket | Load entire `docs/` tree or empty placeholder folders |
 | Verify AI facts match `PROJECT-INDEX.md` before coding | Proceed when AI states wrong phase or architecture |
 | State intent and "done when" clearly | Vague prompts like "work on the project" |
 | End session with handoff note for next ticket | Abandon session mid-task with no record |
 
-→ [11.03](guides/11.03-run-ai-session.md) | [06-daily-workflows.md](06-daily-workflows.md)
+→ [11.03 — Run an AI session](guides/11.03-run-ai-session.md) | [06-daily-workflows.md](06-daily-workflows.md)
 
 ---
 
@@ -30,7 +30,7 @@ Quick reference card for AI-DLC daily work. For explanations, see linked pages.
 |----|-------|
 | Run **impact analysis** before schema/API/interface changes | Execute literal prompt on "rename one column" and say done |
 | Present plan + file table; wait for approval | Let AI silently edit files |
-| Execute in order: schema → API → clients → tests → docs | Change production DB without migration plan |
+| Execute in dependency order: migration → backend → API → clients → tests → docs | Change production DB without migration plan |
 | Call out what a junior might miss | Assume the prompt lists all affected systems |
 | Use one-line plan for genuine micro-fixes only | Skip all planning because change "looks small" |
 
@@ -61,7 +61,7 @@ Quick reference card for AI-DLC daily work. For explanations, see linked pages.
 | Keep `FR-*` and `api:*` IDs stable once published | Rename IDs after breakdown references them |
 | Pair code PR with docs PR when contracts change | Merge code first and "fix docs later" |
 
-→ [11.13](guides/11.13-pr-docs-and-apis.md) | [07-quality-and-maintenance.md](07-quality-and-maintenance.md)
+→ [11.13 — PR docs and APIs](guides/11.13-pr-docs-and-apis.md) | [07-quality-and-maintenance.md](07-quality-and-maintenance.md)
 
 ---
 
@@ -90,12 +90,12 @@ Quick reference card for AI-DLC daily work. For explanations, see linked pages.
 
 | DO | DON'T |
 |----|-------|
-| Bootstrap from AI-Driven-Project-Template | Invent folder structure from scratch |
-| Populate hot files in Phase 0 | Leave `{placeholder}` text in index |
+| [Bootstrap](glossary.md#bootstrap) from the bundled [AI-Driven-Project-Template](https://github.com/MirRayan/AI-DLC-playbook/blob/main/AI-Driven-Project-Template/README.md) | Invent folder structure from scratch |
+| Populate [hot files](glossary.md#hot-file) in Phase 0 | Leave `{placeholder}` text in index |
 | Clone code repos as siblings of context repo | Nest application repos inside context repo |
 | Run context-load test before major development | Skip Phase 0 and jump to coding |
 
-→ [11.01](guides/11.01-create-context-repo.md) | [11.04](guides/11.04-phase-0-project-context.md)
+→ [11.01 — Create a context repo](guides/11.01-create-context-repo.md) | [11.04 — Phase 0: project context](guides/11.04-phase-0-project-context.md)
 
 ---
 

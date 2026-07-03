@@ -1,8 +1,10 @@
 # {Project Name} - Complete Project Context
 
+> **How to use this template:** Copy this file to `.ai/context/project-overview.md` in your [context repo](../glossary.md#context-repo). The **architect or tech lead** fills it in during [Phase 0 — Project Context](../guides/11.04-phase-0-project-context.md). This is one of the four [Tier-1 hot files](../glossary.md#tier-1-hot-files) — a compact summary written for the **AI to read every session**, unlike `PROJECT-CONTEXT.md` (from [PROJECT-CONTEXT-template](PROJECT-CONTEXT-template.md)), which is the fuller human-oriented Phase 0 document. Keep this one short and current. Replace every `{placeholder}`, then **delete this block in your copy**.
+
 **Project:** {Project Name}
 **Type:** {Project Type}
-**Status:** Phase 0 — Setup
+**Status:** Phase 0 — Project Context
 **Last Updated:** YYYY-MM-DD
 
 ---

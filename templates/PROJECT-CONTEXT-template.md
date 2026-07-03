@@ -1,5 +1,7 @@
 # Project Context — {Project Name}
 
+> **How to use this template:** Copy this file to `docs/00-project-context/PROJECT-CONTEXT.md` in your [context repo](../glossary.md#context-repo). The **architect or tech lead** fills it in during [Phase 0 — Project Context](../guides/11.04-phase-0-project-context.md). This is the full, human-oriented record of project facts; its compact AI-facing sibling is `.ai/context/project-overview.md` (from [project-overview-template](project-overview-template.md)). Replace every `{placeholder}`, then **delete this block in your copy**.
+
 **Phase:** 0 — Project Context
 **Last Updated:** YYYY-MM-DD
 **Owner:** {Architect / Tech lead}

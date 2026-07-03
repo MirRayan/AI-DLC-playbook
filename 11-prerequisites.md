@@ -33,8 +33,8 @@ Level 4 — Change-type readiness (non-trivial changes)
 
 | # | Prerequisite | Verification |
 |---|--------------|--------------|
-| 1 | Attended AI-DLC intro session (or equivalent briefing) | You understand centralized context repo purpose |
-| 2 | Read [01-start-here.md](01-start-here.md) and [02-core-concepts.md](02-core-concepts.md) | Can explain context repo vs code repo |
+| 1 | Completed the Learn track: [What is AI-DLC?](00-what-is-ai-dlc.md), [AI Assistant Basics](00-ai-assistant-basics.md), and the [Hands-On Walkthrough](00-hands-on-walkthrough.md) (an AI-DLC intro session also counts, but is optional) | You understand the [context repo](glossary.md#context-repo) purpose and have run at least one context-loaded AI session |
+| 2 | Read [01-start-here.md](01-start-here.md) and [02-core-concepts.md](02-core-concepts.md) | Can explain context repo vs [code repo](glossary.md#code-repo) |
 | 3 | Know your role path | [04-role-developer.md](04-role-developer.md) \| [04-role-pm.md](04-role-pm.md) \| [04-role-architect.md](04-role-architect.md) |
 
 ---
@@ -46,13 +46,13 @@ Level 4 — Change-type readiness (non-trivial changes)
 
 | # | Prerequisite | Verification |
 |---|--------------|--------------|
-| 1 | Context repo exists (bootstrapped from template) | [11.01](guides/11.01-create-context-repo.md) complete |
+| 1 | Context repo exists ([bootstrapped](glossary.md#bootstrap) from template) | [11.01 — Create a context repo](guides/11.01-create-context-repo.md) complete |
 | 2 | `PROJECT-INDEX.md` populated — no placeholders | Quick Facts table is real |
 | 3 | `.ai/context/project-overview.md` populated | AI load test passes |
 | 4 | `.ai/AI-ASSISTANT-RULES.md` customized | Project-specific ALWAYS/NEVER rules exist |
 | 5 | Code repo(s) cloned as siblings | Not nested inside context repo |
 | 6 | Doc DRI assigned | Name in team channel or index |
-| 7 | Context-load test passes | [11.03](guides/11.03-run-ai-session.md) Step 1–2 |
+| 7 | Context-load test passes | [11.03 — Run an AI session](guides/11.03-run-ai-session.md) Step 1–2 |
 
 **New member shortcut:** [11.02 — Join existing project](guides/11.02-join-existing-project.md)
 
@@ -71,7 +71,7 @@ Level 4 — Change-type readiness (non-trivial changes)
 | 4 | Correct repo identified | Code change in app repo; docs in context repo |
 | 5 | Module doc + spec refs loaded | AI references correct `FR-*` IDs |
 | 6 | API dependencies checked (if applicable) | `BACKEND-INDEX.md` status is `verified` or risk accepted |
-| 7 | Tier-1 hot files loaded | [11.03](guides/11.03-run-ai-session.md) Tier-1 prompt |
+| 7 | [Tier-1 hot files](glossary.md#tier-1-hot-files) loaded | [11.03 — Run an AI session](guides/11.03-run-ai-session.md) Tier-1 prompt |
 
 ---
 
@@ -82,9 +82,9 @@ Level 4 — Change-type readiness (non-trivial changes)
 
 | # | Prerequisite | Verification |
 |---|--------------|--------------|
-| 1 | Change classified — does it touch persistence or public interfaces? | If yes → impact analysis required |
-| 2 | Impact analysis completed | [11-impact-analysis-before-change.md](11-impact-analysis-before-change.md) |
-| 3 | Blast radius documented | All consumers listed |
+| 1 | Change classified — does it touch persistence (how data is stored, e.g. the database schema) or public interfaces (APIs or shared code other systems depend on)? | If yes → impact analysis required |
+| 2 | [Impact analysis](glossary.md#impact-analysis) completed | [11-impact-analysis-before-change.md](11-impact-analysis-before-change.md) |
+| 3 | [Blast radius](glossary.md#blast-radius) documented — everything the change could break | All consumers listed |
 | 4 | Plan + affected files table presented | Per `AGENTS.md` in context repo |
 | 5 | Human explicit approval received | "go" / "proceed" / "approved" |
 | 6 | ADR needed? | Architect consulted if architecture impact |
@@ -127,4 +127,4 @@ Report any missing prerequisite before proceeding.
 
 ---
 
-[← Playbook home](README.md) | [Impact analysis →](11-impact-analysis-before-change.md)
+[← Playbook home](README.md) | [Best practices →](11-best-practices.md)

@@ -1,5 +1,7 @@
 # {Project Name} - Project Index
 
+> **How to use this template:** Copy this file to `PROJECT-INDEX.md` at the root of your [context repo](../glossary.md#context-repo) (created from the template). Create it during [Phase 0 — Project Context](../guides/11.04-phase-0-project-context.md) and update it in every later phase (see [Phases 0 to 6](../glossary.md#phases-0-to-6)). The whole team reads it; the Doc [DRI](../glossary.md#directly-responsible-individual-dri) (directly responsible individual) keeps it accurate. Every path listed below refers to a file inside your context repo — the starter versions come from the [bundled project template](https://github.com/MirRayan/AI-DLC-playbook/blob/main/AI-Driven-Project-Template/README.md). Replace every `{placeholder}`, then **delete this block in your copy**.
+
 **Last Updated:** YYYY-MM-DD
 **Template Version:** AI-Driven Project Template v1.x.x
 **Current Phase:** 0 — Project Context
@@ -14,7 +16,7 @@
 | Type | {Web Application / API / Mobile App / etc.} |
 | Architecture | {e.g. Microservices / Monolith / Native Mobile + API} |
 | Tech Stack | {Primary languages and frameworks} |
-| Backend | {Existing / Greenfield / Hybrid} |
+| Backend | {Existing / Greenfield (new build) / Hybrid} |
 | Current Phase | Phase 0 — Project Context |
 | Status | {One-line current state} |
 
@@ -33,7 +35,7 @@
 | Document | Path | Purpose |
 |----------|------|---------|
 | Agent instructions | `AGENTS.md` | Doc sync policy for all AI tools |
-| Backend API registry | `docs/05-breakdown/backend/BACKEND-INDEX.md` | `api:*` IDs and readiness (if APIs) |
+| Backend API registry | `docs/05-breakdown/backend/BACKEND-INDEX.md` | Stable `api:*` endpoint IDs and readiness status (if the project has APIs) |
 | Documentation sync | `docs/process/DOCUMENTATION-SYNC.md` | Light vs deep review cadence |
 | PR checklist | `docs/process/PR-CHECKLIST.md` | Docs + API PR requirements |
 
@@ -65,8 +67,8 @@
 
 ## Documentation cadence
 
-- **Every PR** that changes Markdown: light pass per `docs/process/DOCUMENTATION-SYNC.md`
-- **Quarterly** (or pre-release): deep pass with assigned DRI
+- **Every pull request (PR)** that changes Markdown: light pass per `docs/process/DOCUMENTATION-SYNC.md`
+- **Quarterly** (or pre-release): deep pass with assigned Doc DRI (directly responsible individual)
 - **Source of truth:** this file for curated current state; git history for audit trail
 
 ---
@@ -98,9 +100,11 @@ Full ADRs: `docs/03-architecture/decisions/`
 
 ## Pending Decisions
 
-| ID | Question | Owner | Target date |
-|----|----------|-------|-------------|
-| — | — | — | — |
+| ID | Question | Options | Owner | Target date |
+|----|----------|---------|-------|-------------|
+| PDR-001 | — | — | — | — |
+
+IDs use the [PDR (Pending Decision Record)](../glossary.md#pending-decision-record-pdr) scheme; same columns as the pending-decisions table in `BUSINESS-TECH-CONTEXT.md`, so rows copy across without translation.
 
 ---
 
