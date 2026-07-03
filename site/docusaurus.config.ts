@@ -19,10 +19,13 @@ const config: Config = {
   onBrokenLinks: 'warn',
   markdown: {
     format: 'detect',
+    mermaid: true,
     hooks: {
       onBrokenMarkdownLinks: 'warn',
     },
   },
+
+  themes: ['@docusaurus/theme-mermaid'],
 
   i18n: {
     defaultLocale: 'en',
@@ -41,6 +44,7 @@ const config: Config = {
             '*.md',
             'guides/*.md',
             'templates/*.md',
+            'examples/**/*.md',
           ],
           exclude: [
             'site/**',

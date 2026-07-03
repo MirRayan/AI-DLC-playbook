@@ -20,6 +20,7 @@ Copy-paste starters for the core AI-DLC documents. Each template becomes a real 
 | [Concept note](CONCEPT-NOTE-template.md) | Project manager (PM) | 1 | `docs/01-concept/CONCEPT-NOTE.md` | [11.05 — Phase 1](../guides/11.05-phase-1-concept-note.md) |
 | [Specification](SPECIFICATION-template.md) | PM (architect reviews) | 2 | `docs/02-specification/SPECIFICATION.md` | [11.06 — Phase 2](../guides/11.06-phase-2-specification.md) |
 | [Business + tech context](BUSINESS-TECH-CONTEXT-template.md) | Business architect | 3 | `docs/03-context/BUSINESS-TECH-CONTEXT.md` | [11.07 — Phase 3](../guides/11.07-phase-3-business-tech-context.md) |
+| [Module breakdown](module-breakdown-template.md) | Dev lead | 5 | `docs/05-breakdown/modules/{NN}-{module-name}.md` | [11.09 — Phase 5](../guides/11.09-phase-5-breakdown.md) |
 | [AI rules: impact analysis](AI-RULES-impact-analysis-snippet.md) | Dev lead / architect | 0 | Section pasted into `.ai/AI-ASSISTANT-RULES.md` | [Impact analysis](../11-impact-analysis-before-change.md) |
 | [Test context](TEST-CONTEXT-template.md) | Developer / QA engineer | 6, per sprint | `docs/06-development/TEST-CONTEXT-{MODULE}.md` | [11.15 — Playwright testing](../guides/11.15-playwright-testing.md) |
 

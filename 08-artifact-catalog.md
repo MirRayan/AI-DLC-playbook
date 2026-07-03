@@ -98,7 +98,7 @@ Templates live in two places: the playbook's own `templates/` folder, and the bu
 |------|--------|
 | New context repo index | [templates/PROJECT-INDEX-template.md](templates/PROJECT-INDEX-template.md) (playbook) |
 | AI overview | [templates/project-overview-template.md](templates/project-overview-template.md) (playbook) |
-| Module breakdown | [AI-Driven-Project-Template/templates/mobile-module-breakdown.md](https://github.com/MirRayan/AI-DLC-playbook/blob/main/AI-Driven-Project-Template/templates/mobile-module-breakdown.md) (bundled template) |
+| Module breakdown | [templates/module-breakdown-template.md](templates/module-breakdown-template.md) (playbook, platform-neutral); mobile variant: [mobile-module-breakdown.md](https://github.com/MirRayan/AI-DLC-playbook/blob/main/AI-Driven-Project-Template/templates/mobile-module-breakdown.md) (bundled template) |
 | Sprint tickets | [AI-Driven-Project-Template/templates/sprint-ticket-template.md](https://github.com/MirRayan/AI-DLC-playbook/blob/main/AI-Driven-Project-Template/templates/sprint-ticket-template.md) (bundled template) |
 | API reference | [AI-Driven-Project-Template/templates/api-reference-template.md](https://github.com/MirRayan/AI-DLC-playbook/blob/main/AI-Driven-Project-Template/templates/api-reference-template.md) (bundled template) |
 | ADR | [AI-Driven-Project-Template/docs/03-architecture/decisions/ADR-TEMPLATE.md](https://github.com/MirRayan/AI-DLC-playbook/blob/main/AI-Driven-Project-Template/docs/03-architecture/decisions/ADR-TEMPLATE.md) (bundled template); after bootstrapping it sits at `docs/03-architecture/decisions/ADR-TEMPLATE.md` in your context repo |

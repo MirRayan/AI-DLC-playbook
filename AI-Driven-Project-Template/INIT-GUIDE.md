@@ -4,6 +4,8 @@
 **Purpose:** How to initialize a new project from this template
 **Last Updated:** November 2025
 
+> Not comfortable with terminal commands? Two easier paths: ask an agentic AI tool (e.g. Claude Code, Cursor) to run the steps for you, or follow the manual no-script fallback in the playbook FAQ: https://mirrayan.github.io/AI-DLC-playbook/faq — terminal basics: https://mirrayan.github.io/AI-DLC-playbook/repo-basics
+
 ---
 
 ## 🎯 **What This Does**

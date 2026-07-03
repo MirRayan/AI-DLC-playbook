@@ -4,6 +4,8 @@
 **Created:** November 2025
 **Purpose:** Universal template for AI-driven software development with zero context loss
 
+> **New to AI-DLC or to AI assistants?** The companion playbook teaches everything from zero — concepts, a hands-on practice project, and step-by-step guides for using this template: https://mirrayan.github.io/AI-DLC-playbook/
+
 ---
 
 ## 🎯 **Template Philosophy**

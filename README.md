@@ -46,6 +46,7 @@ Then continue with [Start Here](01-start-here.md) to pick your role path. Stuck 
 | Onboard as a developer | [04-role-developer.md](04-role-developer.md) |
 | Onboard as a project manager (PM) | [04-role-pm.md](04-role-pm.md) |
 | Onboard as a business architect | [04-role-architect.md](04-role-architect.md) |
+| Onboard as a QA engineer | [04-role-qa.md](04-role-qa.md) |
 | Understand the six-phase lifecycle | [05-six-phase-lifecycle.md](05-six-phase-lifecycle.md) |
 | Run daily [AI sessions](glossary.md#ai-session) | [06-daily-workflows.md](06-daily-workflows.md) |
 | Check readiness before starting work | [11-prerequisites.md](11-prerequisites.md) |
@@ -70,7 +71,7 @@ Then continue with [Start Here](01-start-here.md) to pick your role path. Stuck 
 ### Join an existing project
 
 1. [11.02 — Join an existing project](guides/11.02-join-existing-project.md)
-2. Your role page: [04-role-developer.md](04-role-developer.md) | [04-role-pm.md](04-role-pm.md) | [04-role-architect.md](04-role-architect.md)
+2. Your role page: [04-role-developer.md](04-role-developer.md) | [04-role-pm.md](04-role-pm.md) | [04-role-architect.md](04-role-architect.md) | [04-role-qa.md](04-role-qa.md)
 
 ### Implement a feature (daily developer path)
 
@@ -97,7 +98,7 @@ AI-DLC_Playbook/
 ├── ai-dlc-spine.md              # Non-negotiable core vs. adaptable
 ├── glossary.md                  # Every term, defined in plain language
 ├── 03-bootstrap-overview.md     # Context repo folder map
-├── 04-role-*.md                 # Per-role onboarding (developer, PM, architect)
+├── 04-role-*.md                 # Per-role onboarding (developer, PM, architect, QA)
 ├── 05-six-phase-lifecycle.md    # Phases 0–6 overview
 ├── 06-daily-workflows.md        # Day-to-day operating rhythm
 ├── 07-quality-and-maintenance.md

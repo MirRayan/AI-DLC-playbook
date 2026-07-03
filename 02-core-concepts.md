@@ -87,20 +87,12 @@ Do not maintain a parallel changelog (a hand-written history of changes) unless 
 
 ## Context flow diagram
 
-```
-Human intent (requirements, decisions)
-        │
-        ▼
-Centralized context repo (specs, ADRs, .ai rules)
-        │
-        ▼
-AI session (load hot files + task context)
-        │
-        ▼
-Code repo(s) (implementation)
-        │
-        ▼
-Doc sync back (PR updates index, registry, ADRs)
+```mermaid
+flowchart TD
+    human["Human intent (requirements, decisions)"] --> repo["Centralized context repo (specs, ADRs, .ai rules)"]
+    repo --> session["AI session (loads hot files + task context)"]
+    session --> code["Code repos (implementation)"]
+    code -- "doc sync back: PR updates index, registry, ADRs" --> repo
 ```
 
 "Doc sync back" happens in the same [pull request (PR)](glossary.md#pull-request-pr) as the code change; the "registry" is the API registry described in the next section.

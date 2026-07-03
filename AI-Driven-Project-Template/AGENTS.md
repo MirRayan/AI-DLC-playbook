@@ -37,7 +37,7 @@ Wait for explicit approval before writing, editing, or deleting any file. Do not
 
 ## Documentation and architecture consistency
 
-1. **Single narrative index** — Keep the project’s master index (typically `PROJECT-INDEX.md` at the repo root) accurate: phase, status, links to specs and ADRs, and “last updated” when meaning changes.
+1. **Single narrative index** — Keep the project’s master index (typically `PROJECT-INDEX.md` at the repo root) accurate: phase, status, links to specs and ADRs (Architecture Decision Records), and “last updated” when meaning changes.
 2. **Backend API registry (when the project has HTTP/API contracts)** — The single place for **which endpoints are ready** is [`docs/05-breakdown/backend/BACKEND-INDEX.md`](docs/05-breakdown/backend/BACKEND-INDEX.md). Feature/module docs reference stable **`api:*`** IDs; **update the index** when routes change. **Procedure (any agent):** [`docs/process/AGENT-RULES-BACKEND-API.md`](docs/process/AGENT-RULES-BACKEND-API.md). Optional IDE hint files (e.g. `.cursor/rules/backend-api-registry.mdc`) point to that doc only.
 3. **Git is the audit trail** — Do not duplicate history in a separate changelog unless the team maintains one on purpose. Prefer `git log` plus an updated index.
 4. **After structural doc changes** — When you add or change an ADR, update the ADR index (e.g. `docs/03-architecture/decisions/README.md` if present). When you change requirements, ensure the path from **index → spec → breakdown → reference** still links correctly.

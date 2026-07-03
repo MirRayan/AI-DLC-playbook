@@ -89,8 +89,13 @@ Micro-fixes that genuinely touch one file with no downstream consumers (typo in 
 
 **Recommended execution order for schema/API changes:**
 
-```
-Migration / schema → Backend code → API contract → Client apps → Tests → Documentation
+```mermaid
+flowchart LR
+    a["Migration / schema"] --> b["Backend code"]
+    b --> c["API contract"]
+    c --> d["Client apps"]
+    d --> e["Tests"]
+    e --> f["Documentation"]
 ```
 
 ---

@@ -136,4 +136,4 @@ parent-folder/
 
 ## Onboarding
 
-New team members: see [AI-DLC Playbook](../../AI-DLC_Playbook/README.md)
+New team members: see the [AI-DLC Playbook](https://mirrayan.github.io/AI-DLC-playbook/)

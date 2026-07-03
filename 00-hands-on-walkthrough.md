@@ -26,6 +26,21 @@ Your sandbox project is **Lunchbox** — a simple web page for deciding where a 
 
 Everything is fictional, so nothing is at risk. If the AI produces something odd, nothing breaks. That is exactly why we practice here first.
 
+Here is the journey ahead — each phase produces a document the next one builds on:
+
+```mermaid
+flowchart TD
+    p0["Phase 0 — PROJECT-CONTEXT.md + PROJECT-INDEX.md"] --> p1["Phase 1 — CONCEPT-NOTE.md"]
+    p1 --> p2["Phase 2 — SPECIFICATION.md (FR-LUNCH IDs)"]
+    p2 --> p3["Phase 3 — BUSINESS-TECH-CONTEXT.md + ADR-001"]
+    p3 --> p4["Phase 4 — skipped, on purpose (you'll see why)"]
+    p4 --> p5["Phase 5 — two modules, six tickets"]
+    p5 --> p6["Phase 6 — one real AI work session"]
+    p6 --> proof["Prove it: a blank AI rebuilds it all from your files"]
+```
+
+A complete worked solution exists — the [Lunchbox reference (answer key)](examples/lunchbox/README.md). Do each phase yourself first, then compare your file against the reference at the checkpoint. Your wording will differ; the shape and facts should match.
+
 ---
 
 ## Set up (10 minutes)
@@ -107,6 +122,8 @@ These two files are lightweight versions of the playbook's real templates — co
 - [ ] No template placeholders like `{...}` or "TBD" without an owner remain.
 - [ ] `PROJECT-INDEX.md` says the current phase is 0 and lists `PROJECT-CONTEXT.md`.
 
+Compare with the reference: [PROJECT-CONTEXT.md](examples/lunchbox/PROJECT-CONTEXT.md) and [PROJECT-INDEX.md](examples/lunchbox/PROJECT-INDEX.md) *(the reference index shows its final, end-of-walkthrough state — at this point yours lists just one document).*
+
 ---
 
 ## Phase 1 — Concept note
@@ -154,6 +171,8 @@ The full-size version of this document is [templates/CONCEPT-NOTE-template.md](t
 - [ ] The out-of-scope list has at least 5 items, each with a reason.
 - [ ] Success metrics are measurable by a 5-person team (e.g. "lunch decided by 11:05 on 9 of 10 days"), not vanity numbers.
 - [ ] `PROJECT-INDEX.md` now lists two documents and phase 1 complete.
+
+Compare with the reference: [CONCEPT-NOTE.md](examples/lunchbox/CONCEPT-NOTE.md)
 
 ---
 
@@ -209,6 +228,8 @@ The full-size version is [templates/SPECIFICATION-template.md](templates/SPECIFI
 - [ ] Every acceptance criterion is pass/fail checkable by a tester.
 - [ ] The 11:00 cutoff and the tie rule each appear in exactly one requirement.
 - [ ] The out-of-scope section matches the concept note.
+
+Compare with the reference: [SPECIFICATION.md](examples/lunchbox/SPECIFICATION.md)
 
 ---
 
@@ -275,6 +296,8 @@ Lunchbox has a genuine decision to make: **plain HTML page with a little JavaScr
 - [ ] Consequences include at least one honest negative of your choice.
 - [ ] `PROJECT-INDEX.md` lists ADR-001 under key decisions.
 
+Compare with the reference: [BUSINESS-TECH-CONTEXT.md](examples/lunchbox/BUSINESS-TECH-CONTEXT.md) and [ADR-001-page-technology.md](examples/lunchbox/ADR-001-page-technology.md) *(your decision may differ — the shape is what matters).*
+
 ---
 
 ## Phase 4 — Context directories (you get to skip one)
@@ -292,6 +315,8 @@ Lunchbox has a genuine decision to make: **plain HTML page with a little JavaScr
 - [ ] `PROJECT-INDEX.md` records the Phase 4 skip and the reason.
 - [ ] You created no empty folders or placeholder files "just in case".
 - [ ] You can say in one sentence when a project *would* need Phase 4.
+
+Compare with the reference: the Phase Log in [PROJECT-INDEX.md](examples/lunchbox/PROJECT-INDEX.md) shows how the skip is recorded.
 
 ---
 
@@ -346,6 +371,8 @@ A note on IDs: Lunchbox is small enough to share one `LUNCH-` prefix. Bigger pro
 - [ ] Each "done when" checklist traces back to acceptance criteria in the spec.
 - [ ] `LUNCH-002` covers both casting a vote and changing it before 11:00.
 - [ ] `PROJECT-INDEX.md` shows the module table and phase 5 complete.
+
+Compare with the reference: [MODULE-01-vote.md](examples/lunchbox/MODULE-01-vote.md) and [MODULE-02-results.md](examples/lunchbox/MODULE-02-results.md)
 
 ---
 
@@ -427,6 +454,8 @@ A note on IDs: Lunchbox is small enough to share one `LUNCH-` prefix. Bigger pro
 - [ ] You personally verified at least two acceptance criteria — not just the AI's self-grade.
 - [ ] Nothing from module 2 (results display) sneaked in.
 
+The Phase 6 artifact is yours alone — there is no reference mockup to compare. Instead, grade yours against the "done when" list of ticket LUNCH-002 in the reference [MODULE-01-vote.md](examples/lunchbox/MODULE-01-vote.md).
+
 ---
 
 ## Prove it to yourself
@@ -481,7 +510,7 @@ Six questions. Answer from memory, then expand the block to compare.
 You have now done, in miniature, everything this playbook describes at full scale.
 
 → [Start Here](01-start-here.md) — orient yourself in the full playbook and pick your track
-→ Your role page: [PM](04-role-pm.md) · [Architect](04-role-architect.md) · [Developer](04-role-developer.md)
+→ Your role page: [PM](04-role-pm.md) · [Architect](04-role-architect.md) · [Developer](04-role-developer.md) · [QA engineer](04-role-qa.md)
 → [Six-Phase Lifecycle](05-six-phase-lifecycle.md) — the full-scale version of what you just ran
 → [11.01 — Create a new context repo](guides/11.01-create-context-repo.md) — when you are ready to do this for real, with the real templates and a shared repo
 

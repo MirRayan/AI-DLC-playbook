@@ -14,7 +14,7 @@ Keep documentation **accurate**, **linked**, and **easy to navigate** without du
 | **Master index** (e.g. `PROJECT-INDEX.md`) | Current phase, status, metrics, and links to deeper docs |
 | **Backend API registry** (if the project uses HTTP APIs) | [`BACKEND-INDEX.md`](../05-breakdown/backend/BACKEND-INDEX.md) — **`api:*` IDs**, paths, **verified** / **pending** / **not_deployed** |
 | **Git history** | Immutable record of what changed and when |
-| **Specifications, ADRs, reference docs** | Detailed requirements and decisions — **linked from the index**, not copied in full into the index |
+| **Specifications, ADRs (Architecture Decision Records), reference docs** | Detailed requirements and decisions — **linked from the index**, not copied in full into the index |
 
 ## Full mechanical verification (on demand)
 

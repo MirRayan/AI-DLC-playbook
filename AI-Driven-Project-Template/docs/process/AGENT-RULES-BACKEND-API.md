@@ -11,7 +11,7 @@
 
 ## Rule A — Before implementing or changing API client code
 
-When work touches **repositories**, **API clients**, **OpenAPI-generated clients**, or **remote data sources** that call HTTP endpoints:
+When work touches **repositories** (the data-access code pattern — not git repos), **API clients**, **OpenAPI-generated clients**, or **remote data sources** that call HTTP endpoints:
 
 1. Identify the **module or feature doc** that lists backend dependencies (e.g. under `docs/05-breakdown/modules/` or your equivalent).
 2. Collect listed **`api:*`** IDs.

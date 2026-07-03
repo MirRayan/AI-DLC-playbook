@@ -12,7 +12,7 @@ Use for PRs that touch **documentation** and/or **API client / repository** code
 
 - [ ] Master index (e.g. `PROJECT-INDEX.md`) **Last updated** if the change is material.
 - [ ] If this PR changes “how the system works today” (integration patterns, key routes/contracts, constraints), update `.ai/context/project-overview.md`.
-- [ ] If this PR adds/updates ADRs, ensure the ADR index (commonly `docs/03-architecture/decisions/README.md`) lists them.
+- [ ] If this PR adds/updates ADRs (Architecture Decision Records), ensure the ADR index (commonly `docs/03-architecture/decisions/README.md`) lists them.
 
 ## Related
 

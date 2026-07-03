@@ -4,6 +4,8 @@
 **Audience:** Developers, architects, project leads
 **Version:** 1.0.0
 
+> Never worked with an AI assistant before? Start with the playbook's primer — what sessions, prompts, and "loading files" mean: https://mirrayan.github.io/AI-DLC-playbook/ai-assistant-basics
+
 ---
 
 ## 🎯 **Philosophy: AI-First Development**
@@ -25,10 +27,12 @@ This project is designed for **AI to do 95-100% of coding**, with humans:
 1. **Load Core Context** (3-5 minutes)
    ```
    Please load these files in order:
-   1. PROJECT-INDEX.md
-   2. .ai/context/project-overview.md
-   3. .ai/AI-ASSISTANT-RULES.md
+   1. AGENTS.md
+   2. PROJECT-INDEX.md
+   3. .ai/context/project-overview.md
+   4. .ai/AI-ASSISTANT-RULES.md
    ```
+   These four are the "Tier-1 hot files". Many agentic tools read `AGENTS.md` automatically — include it explicitly when your tool doesn't, or when you work in a plain chat (paste the file contents instead of loading by path).
 
 2. **Verify Understanding**
    ```

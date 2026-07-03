@@ -11,9 +11,13 @@ End-to-end review gates from impact analysis through merge. Applies to code, doc
 
 ## Review flow
 
-```
-Impact analysis → Plan approval → Implementation review → AI self-review → Human PR review → Doc sync
-     (before)         (before)          (during)            (before PR)        (before merge)     (if docs)
+```mermaid
+flowchart LR
+    a["Impact analysis (before)"] --> b["Plan approval (before)"]
+    b --> c["Implementation review (during)"]
+    c --> d["AI self-review (before PR)"]
+    d --> e["Human PR review (before merge)"]
+    e --> f["Doc sync (if docs)"]
 ```
 
 ---

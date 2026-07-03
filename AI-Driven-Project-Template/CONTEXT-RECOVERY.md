@@ -12,7 +12,7 @@
 
 | Tier | What to load | Why | When to update |
 |------|--------------|-----|----------------|
-| **1 — Always hot** | `PROJECT-INDEX.md` + `.ai/context/project-overview.md` + `.ai/AI-ASSISTANT-RULES.md` | Fast recovery for any session | Update when meaning changes (phase/status/constraints/stack) |
+| **1 — Always hot** | `AGENTS.md` + `PROJECT-INDEX.md` + `.ai/context/project-overview.md` + `.ai/AI-ASSISTANT-RULES.md` (the four "Tier-1 hot files"; many agentic tools read `AGENTS.md` automatically) | Fast recovery for any session | Update when meaning changes (phase/status/constraints/stack) |
 | **1b — If your project has HTTP APIs** | `docs/05-breakdown/backend/BACKEND-INDEX.md` + relevant `docs/04-reference/` pages | Single truth for endpoint readiness/contracts | Update when endpoint contract/readiness changes |
 | **2 — Decisions & architecture** | `docs/03-architecture/decisions/README.md` (if present) + diagrams policy | Avoid re-litigating decisions | Update when ADRs/diagrams change |
 | **3 — Canonical feature depth** | `docs/05-breakdown/modules/` (or your chosen feature breakdown path) + `docs/02-specification/` | “The details live here” | Update with feature work; not every PR |
@@ -45,9 +45,10 @@ You now have 80% of context. Proceed carefully.
 
 ### Step 1: Load Core (90 seconds)
 ```markdown
-1. PROJECT-INDEX.md - Current state, metrics, quick facts
-2. .ai/context/project-overview.md - Complete project context
-3. .ai/AI-ASSISTANT-RULES.md - Rules to follow
+1. AGENTS.md - Change protocol and doc-sync rules (skip if your tool auto-reads it)
+2. PROJECT-INDEX.md - Current state, metrics, quick facts
+3. .ai/context/project-overview.md - Complete project context
+4. .ai/AI-ASSISTANT-RULES.md - Rules to follow
 ```
 
 ### Step 2: Verify Context (30 seconds)

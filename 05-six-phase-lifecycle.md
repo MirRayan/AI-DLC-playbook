@@ -10,26 +10,15 @@ Overview of the documentation pipeline: the ordered sequence of documents a proj
 
 ## Flow
 
-```
-Phase 0: Project Context
-    │
-    ▼
-Phase 1: Concept Note
-    │
-    ▼
-Phase 2: Specification
-    │
-    ▼
-Phase 3: Business + Tech Context (+ ADRs)
-    │
-    ▼
-Phase 4: Context Directories (optional)
-    │
-    ▼
-Phase 5: Breakdown
-    │
-    ▼
-Phase 6: Development (ongoing)
+```mermaid
+flowchart TD
+    p0["Phase 0 — Project Context"] --> p1["Phase 1 — Concept Note"]
+    p1 --> p2["Phase 2 — Specification"]
+    p2 --> p3["Phase 3 — Business + Tech Context and ADRs"]
+    p3 -- "large projects only" --> p4["Phase 4 — Context Directories (optional)"]
+    p3 --> p5["Phase 5 — Breakdown"]
+    p4 --> p5
+    p5 --> p6["Phase 6 — Development (ongoing)"]
 ```
 
 What each named artifact is, in one line:

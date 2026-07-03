@@ -16,7 +16,7 @@ This is the single, canonical reading path for the whole playbook. If you are co
 2. **This page** — orientation and the decision trees below
 3. [02-core-concepts.md](02-core-concepts.md) — the vocabulary everything else uses
 4. [ai-dlc-spine.md](ai-dlc-spine.md) — what is non-negotiable vs. adaptable
-5. **Your role page** — [developer](04-role-developer.md), [project manager](04-role-pm.md), or [business architect](04-role-architect.md)
+5. **Your role page** — [developer](04-role-developer.md), [project manager](04-role-pm.md), [business architect](04-role-architect.md), or [QA engineer](04-role-qa.md)
 6. **Your first guide** — usually [11.01 — Create a context repo](guides/11.01-create-context-repo.md) for a new project, or [11.02 — Join an existing project](guides/11.02-join-existing-project.md)
 
 Keep the [glossary](glossary.md) open as you read — it defines every term in the playbook in plain language and is always available as a reference.
@@ -111,6 +111,7 @@ To keep the playbook from drifting into duplicate copies, the daily developer pa
 | Developer | [04-role-developer.md](04-role-developer.md) |
 | Project manager (PM) | [04-role-pm.md](04-role-pm.md) |
 | Business architect | [04-role-architect.md](04-role-architect.md) |
+| QA engineer | [04-role-qa.md](04-role-qa.md) |
 | Week 1 schedule (all roles) | [11.14 — Week 1 schedules](guides/11.14-week-1-schedules.md) |
 
 ---

@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "playbook-site",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "serve", "--", "--no-open"],
+      "cwd": "site",
+      "port": 3000
+    }
+  ]
+}

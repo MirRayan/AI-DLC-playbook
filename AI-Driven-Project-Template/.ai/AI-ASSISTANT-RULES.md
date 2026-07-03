@@ -11,12 +11,12 @@
 
 ## Hot files (template default)
 
-These files should stay accurate because they carry the highest context value per token:
+These files should stay accurate because they carry the highest context value per token. Together with `AGENTS.md` and this file, the first two form the four "Tier-1 hot files" loaded at the start of every AI session (see https://mirrayan.github.io/AI-DLC-playbook/ai-assistant-basics):
 
 - **`PROJECT-INDEX.md`** — curated “what is true now” (status, phase, links). Update when meaning changes.
 - **`.ai/context/project-overview.md`** — optimized global context; keep aligned with major constraints/architecture changes.
 - **If your project has HTTP APIs:** `docs/05-breakdown/backend/BACKEND-INDEX.md` + relevant `docs/04-reference/` pages — update when contracts/readiness change.
-- **If your repo uses ADRs:** keep the ADR index (commonly `docs/03-architecture/decisions/README.md`) current.
+- **If your repo uses ADRs (Architecture Decision Records):** keep the ADR index (commonly `docs/03-architecture/decisions/README.md`) current.
 
 ## Project-specific (fill in)
 

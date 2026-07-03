@@ -12,6 +12,22 @@ How to run [AI sessions](glossary.md#ai-session), recover context, and maintain 
 
 ## Every AI session (no exceptions)
 
+```mermaid
+flowchart TD
+    a["New chat for a new task"] --> b["Load the four Tier-1 hot files"]
+    b --> c{"AI summary correct?"}
+    c -- "no" --> d["Stop — fix hot files"]
+    d --> b
+    c -- "yes" --> e["Load task context (this task only)"]
+    e --> f["State intent and constraints"]
+    f --> g{"Schema or API change?"}
+    g -- "yes" --> h["Impact analysis first"]
+    h --> i["Present plan — human approves"]
+    g -- "no" --> i
+    i --> j["Work in the correct repo"]
+    j --> k["Sync docs if contracts or decisions changed"]
+```
+
 1. **New chat?** If new task/feature → start fresh ([11.03 — Clear session](guides/11.03-run-ai-session.md#clear-session-before-a-new-task-or-feature))
 2. Load the four [Tier-1 hot files](glossary.md#tier-1-hot-files) (`AGENTS.md`, `PROJECT-INDEX.md`, `project-overview.md`, `AI-ASSISTANT-RULES.md`) — "load" means let an agentic tool read them by path, or paste their contents into a plain chat ([AI Assistant Basics](00-ai-assistant-basics.md))
 3. Verify AI understanding — ask "Summarize this project and its current phase from the loaded files"; stop and reload if the answer is wrong

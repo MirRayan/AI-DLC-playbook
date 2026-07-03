@@ -9,7 +9,7 @@ The **Session Protocol** defines best practices for conducting effective AI-assi
 ### 1. Planning Sessions
 - **Purpose:** Architecture design, decision-making, requirement analysis
 - **Duration:** 30-120 minutes
-- **Outputs:** ADRs, PDRs, architecture diagrams, specifications
+- **Outputs:** ADRs (Architecture Decision Records), PDRs (Pending Decision Records), architecture diagrams, specifications
 - **AI Role:** Research, analysis, documentation generation
 
 ### 2. Implementation Sessions

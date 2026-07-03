@@ -61,6 +61,16 @@ Once the documents exist, a typical AI-DLC session has a simple shape:
 3. **Work** — the AI drafts the code or document; you review, question, and steer.
 4. **Sync** — anything you decided or changed goes back into the documents, so the next session starts from the new truth.
 
+```mermaid
+flowchart TD
+    docs["Context repo — the team's shared memory"] --> load["Load — a fresh session reads the hot files"]
+    load --> verify{"AI understands the project?"}
+    verify -- "no — fix the docs first" --> docs
+    verify -- "yes" --> work["Work — AI drafts, you review and steer"]
+    work --> sync["Sync — decisions and changes go back into the documents"]
+    sync --> docs
+```
+
 The [Hands-On Walkthrough](00-hands-on-walkthrough.md) lets you experience this loop yourself on a toy project.
 
 ---
@@ -106,6 +116,7 @@ Roles are hats, not headcount — on a small team one person wears several.
 | **Developer** | Runs context-loaded AI sessions to implement tickets, verifies the AI's output, and ships doc updates with the code. | [Developer role guide](04-role-developer.md) |
 | **Project Manager (PM)** | Owns the concept and specification documents, keeps requirement IDs and the project index honest, and tracks progress. | [PM role guide](04-role-pm.md) |
 | **Business Architect** | Owns the project context, technical decisions (ADRs), and impact analysis for risky changes. | [Business architect role guide](04-role-architect.md) |
+| **QA Engineer** | Verifies features against the acceptance criteria and owns browser test automation. | [QA engineer role guide](04-role-qa.md) |
 
 ---
 
