@@ -12,6 +12,29 @@ slug: /
 
 **Purpose:** show you, step by step, how to set up ([bootstrap](glossary.md#bootstrap)) and operate a context repo for an AI-DLC project.
 
+<div class="hero-cards">
+  <a class="hero-card" href="/AI-DLC-playbook/what-is-ai-dlc">
+    <div class="hero-card__eyebrow">New to AI-DLC</div>
+    <div class="hero-card__title">Learn the basics →</div>
+    <div class="hero-card__desc">Start from zero — what AI-DLC is, how AI assistants work, then build a tiny practice project yourself.</div>
+  </a>
+  <a class="hero-card" href="/AI-DLC-playbook/guides/11.02-join-existing-project">
+    <div class="hero-card__eyebrow">Joining a project</div>
+    <div class="hero-card__title">Get onboarded →</div>
+    <div class="hero-card__desc">Ramp up on an existing AI-DLC project: get access, read the right docs, and run your first session.</div>
+  </a>
+  <a class="hero-card" href="/AI-DLC-playbook/guides/11.01-create-context-repo">
+    <div class="hero-card__eyebrow">Starting a project</div>
+    <div class="hero-card__title">Bootstrap a repo →</div>
+    <div class="hero-card__desc">Create a new context repo from the template and work through Phases 0–6.</div>
+  </a>
+  <a class="hero-card" href="/AI-DLC-playbook/cheat-sheet">
+    <div class="hero-card__eyebrow">Already up to speed</div>
+    <div class="hero-card__title">Quick reference →</div>
+    <div class="hero-card__desc">The daily loop, the four hot files, ID schemes, and the glossary — one page.</div>
+  </a>
+</div>
+
 ---
 
 ## New to AI-DLC? Start with the Learn track
@@ -37,6 +60,7 @@ Then continue with [Start Here](01-start-here.md) to pick your role path. Stuck 
 
 | I want to… | Go to |
 |------------|-------|
+| Grab a one-page quick reference | [cheat-sheet.md](cheat-sheet.md) |
 | Understand what this playbook covers | [01-start-here.md](01-start-here.md) |
 | Learn core concepts and vocabulary | [02-core-concepts.md](02-core-concepts.md) |
 | Know what's non-negotiable vs. adaptable | [ai-dlc-spine.md](ai-dlc-spine.md) |

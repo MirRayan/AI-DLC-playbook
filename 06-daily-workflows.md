@@ -6,7 +6,7 @@ id: daily-workflows
 
 How to run [AI sessions](glossary.md#ai-session), recover context, and maintain rhythm across the team. If you have never worked with an AI assistant, read [AI Assistant Basics](00-ai-assistant-basics.md) first — it explains what sessions, loading, and context windows are.
 
-**Step-by-step session guide:** [11.03 — Run an AI session](guides/11.03-run-ai-session.md)
+**Step-by-step session guide:** [11.03 — Run an AI session](guides/11.03-run-ai-session.md) · **One-page quick reference:** [Cheat sheet](cheat-sheet.md)
 
 ---
 
